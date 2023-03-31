@@ -1,5 +1,5 @@
 Test:
-Code:
+Code: ccValidate(4102080860435620)
 Expected Output:
 
 Decsribe: ccValidate();
@@ -18,3 +18,15 @@ Expected Output: [4,2,0,4,0,16,0,16,6,0,4,6,5,12,0]
 Test: "If any of the returned digits is a double digit, it should add the two separate integers of the double digit together"
 Code: ccValidate(4102080860435620)
 Expected Output: [4,2,0,4,0,7,0,7,6,0,4,6,5,3,0]
+
+Test: "It should add all the numbers in the array together and return that value"
+Code: ccValidate(4102080860435620)
+Expected Output: 50;
+
+Test: "If the last number of the sum is 0, it should return a string saying the card is valid"
+Code: ccValidate(4102080860435620)
+Expected Output: "This card number is valid"
+
+Test: 
+Code: ccValidate(4102080860435620)
+Expected Output:
