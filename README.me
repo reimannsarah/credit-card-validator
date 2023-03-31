@@ -27,6 +27,35 @@ Test: "If the last number of the sum is 0, it should return a string saying the 
 Code: ccValidate(4102080860435620)
 Expected Output: "This card number is valid"
 
-Test: 
+Test: "If the last number of the sum is not 0, it should return a string saying the card is not valid"
+Code: ccValidate(4102080880435620)
+Expected Output: "This card number is not valid."
+
+Test:
 Code: ccValidate(4102080860435620)
 Expected Output:
+
+valid numbers:
+let v1 = 3402080860432600;
+let v2 = 3702080860465630;
+let v3 = 4102080880435620;
+let v4 = 5102080860435610;
+let v5 = 6102080860435600;
+
+
+
+invalid numbers:
+let iv1 = 3402080860435620;
+let iv2 = 3702080860435620;
+let iv3 = 4102080880485620;
+let iv4 = 5102080860835610;
+let iv5 = 6102080860435800;
+
+Ends in 0, but doesn't start with 34, 37, 4, 5, or 6
+let iv6 = 7102080860434600;
+let iv7 = 8102080860433600;
+
+
+Starts with 34, 37, 4, 5, or 6 but doesn't end with 0
+let iv8 = 6102080860439800;
+let iv9 = 3702080860435690;
